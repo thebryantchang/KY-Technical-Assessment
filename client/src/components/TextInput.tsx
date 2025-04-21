@@ -42,6 +42,7 @@ const TextInput = ({
           borderRadius: '4px',
           marginTop: previewMode ? '8px' : '0',
         }}
+        disabled={!previewMode}
       />
     </div>
   );
