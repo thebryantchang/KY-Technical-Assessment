@@ -30,7 +30,7 @@ const Table = ({
       options: newColType === 'dropdown' ? ['Option 1', 'Option 2'] : undefined,
     };
   
-    console.log('Adding column:', newColumn); // DEBUG
+    console.log('Adding column:', newColumn); // DEBUG 
   
     console.log('[Table] Before:', field.columns);
     updateElement({
@@ -150,7 +150,7 @@ const Table = ({
       <button
         onClick={() => {
           const updated = [...field.columns];
-          const newOptions = [...(col.options || []), ''];
+          const newOptions = [...(col.options || []), 'New option'];
           updated[idx] = { ...col, options: newOptions };
           updateElement({ ...field, columns: updated });
         }}
