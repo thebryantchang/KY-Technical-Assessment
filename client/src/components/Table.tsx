@@ -30,7 +30,7 @@ const Table = ({
       options: newColType === 'dropdown' ? ['Option 1', 'Option 2'] : undefined,
     };
   
-    console.log('Adding column:', newColumn); // DEBUG ✅
+    console.log('Adding column:', newColumn); // DEBUG
   
     console.log('[Table] Before:', field.columns);
     updateElement({
